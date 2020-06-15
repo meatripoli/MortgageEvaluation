@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/App.css';
 import MortgageForm from '../components/MortgageForm';
 import PayoffForm from '../components/PayoffForm';
+import SavingsForm from '../components/SavingsForm';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -33,6 +34,7 @@ function App() {
             <Paper className={classes.paper}>
               <MortgageForm/>
               <PayoffForm/>
+              <SavingsForm/>
             </Paper>
           </Grid>
           <Grid item xs={8} >
