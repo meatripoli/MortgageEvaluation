@@ -27,7 +27,6 @@ export default function FormPropsTextFields() {
     setSelectedDate(date);
   };
   return (
-      
     <form className={classes.root} autoComplete="off">
         <h3>Original Loan Information</h3>
         <MuiPickersUtilsProvider utils={MomentUtils}>

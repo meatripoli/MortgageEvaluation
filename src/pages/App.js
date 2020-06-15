@@ -7,12 +7,17 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
   paper: {
     padding: theme.spacing(2),
-    margin: '20px',
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
+  margin:{
+    padding: '20px',
+  }
 }));
 
 function App() {
@@ -20,15 +25,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Grid container>
-          <Grid item xs={12}>
+      <Grid container className={classes.margin}>
+          <Grid item xs={12} >
             <Paper className={classes.paper}>MORTGAGE EVALUATION APP</Paper>
           </Grid>
-          <Grid item xs={6} >
-            <Paper className={classes.paper}><MortgageForm/></Paper>
+          <Grid item xs={4} >
+            <Paper className={classes.paper}>
+              <MortgageForm/>
+              <PayoffForm/>
+            </Paper>
           </Grid>
-          <Grid item xs={6} >
-            <Paper className={classes.paper}><PayoffForm/></Paper>
+          <Grid item xs={8} >
+            <Paper className={classes.paper}>OUTPUT</Paper>
           </Grid>
         </Grid>  
       </header>
