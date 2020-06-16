@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function FormPropsTextFields() {
+export default function(props) {
     const classes = useStyles();
     const [selectedDate, setSelectedDate] = React.useState(null);
 
