@@ -40,7 +40,7 @@ function App() {
           </Grid>
           <Grid item xs={8} >
             <Paper className={classes.paper}>
-              <MortgageOutput/>
+              <MortgageOutput mothlyLoanPayment={1674.26} mothlyLoanPrincipal={544.51} mothlyLoanInterest={1129.75}/>
             </Paper>
           </Grid>
         </Grid>  

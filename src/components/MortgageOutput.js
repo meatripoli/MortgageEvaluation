@@ -22,14 +22,14 @@ export default function(props){
     <Card className={classes.root}>
         <CardActionArea>
             <Typography gutterBottom variant="h5" component="h2">
-                Monthly payments <span> $1,674.26</span>
+                Monthly payments ${props.mothlyLoanPayment}
             </Typography>
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Principal <span> $1,674.26</span> 
+                    Principal ${props.mothlyLoanPrincipal}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Interest <span> $1,674.26</span> 
+                    Interest ${props.mothlyLoanInterest}
                 </Typography>
             </CardContent>
         </CardActionArea>
